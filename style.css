@@ -1,0 +1,346 @@
+.container {
+    display: inline-block;
+    width: 1280px;
+    height: 1400px;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 24px 12px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+}
+
+.clot {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+}
+
+header div:nth-child(1) {
+    position: static;
+    width: 1144px;
+    height: 32px;
+    left: 24px;
+    top: 24px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+header div:nth-child(2) {
+    position: static;
+    width: 1232px;
+    height: 48px;
+    left: 24px;
+    top: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 24px 0px;
+}
+
+.content {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.content .sample {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+}
+
+.sample #title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.sample #position1,
+#position2 {
+    width: 384px;
+    height: 184px;
+    left: 0px;
+    top: 0px;
+    background: #F7F7F7;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.sample #position2 {
+    margin-bottom: 0px;
+}
+
+.sample #result {
+    display: flex;
+    margin: 16px;
+    flex-wrap: wrap;
+}
+
+#result div {
+    background-color: #FFFFFF;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 232px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+#result div:nth-child(9n) {
+    margin-right: 0px;
+}
+
+.sample div:nth-child(3) {
+    width: 384px;
+    height: 184px;
+    left: 0px;
+    top: 0px;
+    background: #F7F7F7;
+    border-radius: 8px;
+}
+
+.content .dwp {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+}
+
+.dwp #title2 {
+    margin-bottom: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.dwp #box {
+    width: 454px;
+    height: 318px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+#box .row_main {
+    display: flex;
+    margin: 8px;
+}
+
+.row_main .row {
+    position: static;
+    width: 30px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+    background: #F3F3F3;
+    border-radius: 2px;
+    margin-right: 4px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.row_main .row:nth-child(13) {
+    margin-right: 0px;
+}
+
+#box .culumn_main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.culumn_main .culumn {
+    display: inline-block;
+    position: static;
+    width: 30px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+    background: #F3F3F3;
+    border-radius: 2px;
+    margin-top: 4px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.culumn_main .culumn:nth-child(1) {
+    margin-top: -4px;
+}
+
+.content .location {
+    display: flex;
+    flex-direction: column;
+}
+
+.location {
+    position: relative;
+    width: 544px;
+    height: 624px;
+    border-radius: 8px;
+}
+
+.location>div {
+    margin-bottom: 16px;
+    position: static;
+    width: 128px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #4D4C4C;
+}
+
+.location #table {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    position: relative;
+    width: 544px;
+    height: 624px;
+    border-radius: 8px;
+    border: 1px solid #E6E6E6;
+    box-sizing: content-box;
+}
+
+.list {
+    width: 544px;
+    height: 48px;
+    display: flex;
+    border-top: 1px solid #E6E6E6;
+    box-sizing: border-box;
+}
+
+.list:nth-child(1) {
+    border-top: 0px;
+}
+
+.list .position {
+    width: 80px;
+    height: 24px;
+    margin: 12px 8px 12px 24px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4D4C4C;
+}
+
+.list .barcode {
+    position: static;
+    width: 320px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4D4C4C;
+    text-align: left;
+}
+
+.list .barcode:nth-child(1) {
+    text-align: center;
+}
+
+
+.list ._96dwp {
+
+    position: static;
+    width: 80px;
+    height: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 8px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #4D4C4C;
+}
+
+
+footer {
+    width: 1280px;
+    height: 104px;
+    margin-top: -104px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer div {
+
+    height: 56px;
+    display: inline-block;
+    text-align: center;
+    line-height: 56px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+footer .save {
+    position: static;
+    width: 107px;
+    left: 1009px;
+    top: 24px;
+    background: white;
+    border: 1px solid #A8A7A7;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #333333;
+}
+
+footer .ok {
+    position: static;
+    width: 88px;
+    height: 56px;
+    margin: 24px 24px 24px 8px;
+    background: #0076CE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+
+
+}
