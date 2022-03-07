@@ -188,7 +188,6 @@ header div:nth-child(2) {
 .content .location {
     display: flex;
     flex-direction: column;
-
 }
 
 .location {
@@ -217,14 +216,12 @@ header div:nth-child(2) {
 
 .location .table {
     border: 1px solid #E6E6E6;
-    /* position: relative; */
     width: 544px;
     height: 624px;
     border-radius: 8px;
 }
 
 .location .table_head {
-
     display: flex;
     width: 544px;
     height: 48px;
@@ -288,7 +285,6 @@ header div:nth-child(2) {
     width: 544px;
     height: 569px;
     border-radius: 8px;
-    /* border : 1px solid #E6E6E6; */
     box-sizing: content-box;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -374,7 +370,6 @@ footer {
 }
 
 footer div {
-
     height: 56px;
     display: inline-block;
     text-align: center;
@@ -388,10 +383,8 @@ footer .print {
     top: 24px;
     right: 24px;
     bottom: 24px;
-
     width: 113px;
     height: 56px;
-
     background: white;
     border: 1px solid #A8A7A7;
     font-family: Inter;
@@ -408,11 +401,8 @@ footer .save {
     top: 24px;
     right: 24px;
     bottom: 24px;
-
-
     width: 107px;
     height: 56px;
-
     background: white;
     border: 1px solid #A8A7A7;
     font-family: Inter;
