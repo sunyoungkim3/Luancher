@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+    function Hello(){
+            return(
+            <div>
+            <div className="content_data">
+            2021-12-31(V1.00.000_VersionName.DD)
+          </div>
+          <div className="content_detail">
+            <div className="content">
+              Ut dolor viverra sapien magna aliquet. Mauris phasellus elementum
+              scelerisque accumsan, gravida. Hendrerit curabitur nisl eget
+              volutpat sed cursus sed id. Eu, eu blandit neque turpis. Risus sit
+              hendrerit turpis laoreet diam in. Egestas tristique ut libero vel
+              iaculis fusce mi dictum. Amet fermentum, a ornare velit odio quis.
+              Adipiscing id et dignissim odio rhoncus. Velit aliquam blandit
+              dapibus suspendisse cursus nulla imperdiet. Sed semper ipsum, a
+              donec. Pulvinar feugiat scelerisque erat adipiscing egestas nunc.
+              Rhoncus dictumst purus adipiscing orci nibh nibh. Sed neque sem
+              massa nibh eget tincidunt fringilla. Risus eleifend porttitor
+              viverra dignissim malesuada euismod eros faucibus at. Amet nisi,
+              tellus fermentum ultrices egestas tincidunt. Nunc pretium etiam
+              enim eleifend nam. Aenean elit ipsum vel sit. Imperdiet amet
+              natoque ac nisi tincidunt mi eu hendrerit. Adipiscing pulvinar ut
+              tortor tristique accumsan. Odio neque, leo in quis non adipiscing
+              sodales id.
+            </div>
+           
+          </div>
+            </div>
+        );
+    }   
+    function Hello2(){
+        return(
+            <div>
+            <div className="content_data">
+                2022-02-13 (V1.00.000_VersionName.DD)
+          </div>
+          <div  className="content_detail">
+            <div className="content">
+              Ut dolor viverra sapien magna aliquet. Mauris phasellus elementum
+              scelerisque accumsan, gravida. Hendrerit curabitur nisl eget
+              volutpat sed cursus sed id. Eu, eu blandit neque turpis. Risus sit
+              hendrerit turpis laoreet diam in. Egestas tristique ut libero vel
+              iaculis fusce mi dictum. Amet fermentum, a ornare velit odio quis.
+              Adipiscing id et dignissim odio rhoncus. Velit aliquam blandit
+              dapibus suspendisse cursus nulla imperdiet. Sed semper ipsum, a
+              donec. Pulvinar feugiat scelerisque erat adipiscing egestas nunc.
+              Rhoncus dictumst purus adipiscing orci nibh nibh. Sed neque sem
+              massa nibh eget tincidunt fringilla. Risus eleifend porttitor
+              viverra dignissim malesuada euismod eros faucibus at. Amet nisi,
+              tellus fermentum ultrices egestas tincidunt. Nunc pretium etiam
+              enim eleifend nam. Aenean elit ipsum vel sit. Imperdiet amet
+              natoque ac nisi tincidunt mi eu hendrerit. Adipiscing pulvinar ut
+              tortor tristique accumsan. Odio neque, leo in quis non adipiscing
+              sodales id.
+            </div>
+           
+          </div>
+            </div>
+        );
+    }
+    function App(){   
+        const [index, setIndex] =React.useState(0); 
+        const onClick =(event)=>{   
+            setIndex(event.target.id);
+
+        };
+
+        return(
+            <div>
+                <h1 >Software Update History</h1>  
+                <div className="data_list" value={index} onClick={onClick} id = "0">2021-12-31 (V1.00.000_VersionName.DD)</div>
+                <div className="data_list" value={index} onClick={onClick} id = "1">2022-02-13 (V1.00.000_VersionName.DD)</div>
+                
+                {index === "0" ? <Hello /> : null}
+                {index === "1" ? <Hello2 /> : null}
+                
+            </div>
+              
+        );
+    }
+    const root = document.getElementById("root");
+    ReactDOM.render(<App />, root);
+    
+</script>
+
+</html>
