@@ -51,16 +51,11 @@
         return(
             <div>
             <div className="content_data">
-                2022-02-13 (V1.00.000_VersionName.DD)
+                2022-04-01 (V1.00.000_VersionName.DD)
           </div>
           <div  className="content_detail">
             <div className="content">
-              Ut dolor viverra sapien magna aliquet. Mauris phasellus elementum
-              scelerisque accumsan, gravida. Hendrerit curabitur nisl eget
-              volutpat sed cursus sed id. Eu, eu blandit neque turpis. Risus sit
-              hendrerit turpis laoreet diam in. Egestas tristique ut libero vel
-              iaculis fusce mi dictum. Amet fermentum, a ornare velit odio quis.
-              Adipiscing id et dignissim odio rhoncus. Velit aliquam blandit
+              Velit aliquam blandit
               dapibus suspendisse cursus nulla imperdiet. Sed semper ipsum, a
               donec. Pulvinar feugiat scelerisque erat adipiscing egestas nunc.
               Rhoncus dictumst purus adipiscing orci nibh nibh. Sed neque sem
@@ -70,7 +65,12 @@
               enim eleifend nam. Aenean elit ipsum vel sit. Imperdiet amet
               natoque ac nisi tincidunt mi eu hendrerit. Adipiscing pulvinar ut
               tortor tristique accumsan. Odio neque, leo in quis non adipiscing
-              sodales id.
+              sodales id. Ut dolor viverra sapien magna aliquet. Mauris phasellus elementum
+              scelerisque accumsan, gravida. Hendrerit curabitur nisl eget
+              volutpat sed cursus sed id. Eu, eu blandit neque turpis. Risus sit
+              hendrerit turpis laoreet diam in. Egestas tristique ut libero vel
+              iaculis fusce mi dictum. Amet fermentum, a ornare velit odio quis.
+              Adipiscing id et dignissim odio rhoncus. 
             </div>
            
           </div>
@@ -78,7 +78,7 @@
         );
     }
     function App(){   
-        const [index, setIndex] =React.useState(0); 
+        const [index, setIndex] =React.useState("1"); 
         const onClick =(event)=>{   
             setIndex(event.target.id);
 
@@ -87,8 +87,9 @@
         return(
             <div>
                 <h1 >Software Update History</h1>  
+                <div className="data_list" value={index} onClick={onClick} id = "1">2022-04-01 (V1.00.000_VersionName.DD)</div>
                 <div className="data_list" value={index} onClick={onClick} id = "0">2021-12-31 (V1.00.000_VersionName.DD)</div>
-                <div className="data_list" value={index} onClick={onClick} id = "1">2022-02-13 (V1.00.000_VersionName.DD)</div>
+
                 
                 {index === "0" ? <Hello /> : null}
                 {index === "1" ? <Hello2 /> : null}
