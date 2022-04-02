@@ -1,3 +1,17 @@
+.SWUpdateHistoryheader {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.contents {
+    display: flex;
+
+}
+
 .content_data {
     font-family: 'Inter';
     font-style: normal;
@@ -6,9 +20,9 @@
     line-height: 32px;
     color: #000000;
     margin-bottom: 15px;
-  }
+}
 
-  .content_detail {
+.content_detail {
     width: 912px;
     font-family: 'Roboto';
     font-style: normal;
@@ -16,13 +30,13 @@
     font-size: 16px;
     line-height: 24px;
     overflow-x: auto;
-  }
+}
 
-  .content {
+.content {
     margin-bottom: 15px;
-  }
+}
 
-  .data_list {
+.data_list {
     width: 296px;
     height: 80px;
     box-sizing: border-box;
@@ -32,6 +46,16 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-  }
+}
 
-  
+.data_list_active {
+    width: 296px;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 16px 24px;
+    background-color: #f6f6f6;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+  }

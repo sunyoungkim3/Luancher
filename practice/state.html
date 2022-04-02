@@ -79,21 +79,27 @@
     }
     function App(){   
         const [index, setIndex] =React.useState("1"); 
-        const onClick =(event)=>{   
+        const [className, setClassName] = React.useState("data_list");
+        const onClick =(event)=>{ 
+            console.log(event.target.id);
             setIndex(event.target.id);
-
+            // ClassName이 data_list 이면 data_list_active로 변경
+            // ClassName이 data_list_active 이면 data_list로 변경
+            
         };
+    
 
         return(
             <div>
-                <h1 >Software Update History</h1>  
-                <div className="data_list" value={index} onClick={onClick} id = "1">2022-04-01 (V1.00.000_VersionName.DD)</div>
-                <div className="data_list" value={index} onClick={onClick} id = "0">2021-12-31 (V1.00.000_VersionName.DD)</div>
-
-                
+                <div className="SWUpdateHistoryheader">Software Update History</div>                 
+            <div className="contents">
+            <div>
+                <div className={className} onClick={onClick} id = "1">2022-04-01 (V1.00.000_VersionName.DD)</div>
+                <div className={className} onClick={onClick} id = "0">2021-12-31 (V1.00.000_VersionName.DD)</div>
+            </div>           
                 {index === "0" ? <Hello /> : null}
                 {index === "1" ? <Hello2 /> : null}
-                
+            </div>                
             </div>
               
         );
